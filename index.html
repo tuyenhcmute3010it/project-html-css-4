@@ -1,163 +1,833 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lucy</title>
-    <!-- Css -->
-    <link rel="stylesheet" href="./asset/css/reset.css" />
-    <link rel="stylesheet" href="./asset/css/style.css" />
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="./asset/favicon/" />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="./asset/favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="./asset/favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./asset/favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="./asset/favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="./asset/favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="./asset/favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="./asset/favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./asset/favicon/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="./asset/favicon/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./asset/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="./asset/favicon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./asset/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./asset/favicon/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="./asset/favicon/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Sora:wght@100..800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <header class="header">
-        <div class="container">
-          <div class="header__top">
-            <div class="logo">
-              <div class="logo-wrap">
-                <figure class="logo__union">
-                  <img
-                    src="./asset/img/Union-logo.svg"
-                    alt=""
-                    class="logo__union-img"
-                  />
-                </figure>
-                <figure class="logo__primary">
-                  <img
-                    src="./asset/img/primary-logo.svg"
-                    alt=""
-                    class="logo__primary-img"
-                  />
-                </figure>
-              </div>
-              <figure class="logo__sym-wrap">
-                <img src="./asset/img/logo-sym.svg" alt="" class="logo__sym" />
-              </figure>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lucy</title>
+        <!-- Css -->
+        <link rel="stylesheet" href="./asset/css/reset.css" />
+        <link rel="stylesheet" href="./asset/css/style.css" />
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./asset/favicon/" />
+        <link
+        rel="apple-touch-icon"
+        sizes="60x60"
+        href="./asset/favicon/apple-icon-60x60.png"
+        />
+        <link
+        rel="apple-touch-icon"
+        sizes="72x72"
+        href="./asset/favicon/apple-icon-72x72.png"
+        />
+        <link
+        rel="apple-touch-icon"
+        sizes="76x76"
+        href="./asset/favicon/apple-icon-76x76.png"
+        />
+        <link
+        rel="apple-touch-icon"
+        sizes="114x114"
+        href="./asset/favicon/apple-icon-114x114.png"
+        />
+        <link
+        rel="apple-touch-icon"
+        sizes="120x120"
+        href="./asset/favicon/apple-icon-120x120.png"
+        />
+        <link
+        rel="apple-touch-icon"
+        sizes="144x144"
+        href="./asset/favicon/apple-icon-144x144.png"
+        />
+        <link
+        rel="apple-touch-icon"
+        sizes="152x152"
+        href="./asset/favicon/apple-icon-152x152.png"
+        />
+        <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="./asset/favicon/apple-icon-180x180.png"
+        />
+        <link
+        rel="icon"
+        type="image/png"
+        sizes="192x192"
+        href="./asset/favicon/android-icon-192x192.png"
+        />
+        <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="./asset/favicon/favicon-32x32.png"
+        />
+        <link
+        rel="icon"
+        type="image/png"
+        sizes="96x96"
+        href="./asset/favicon/favicon-96x96.png"
+        />
+        <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="./asset/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./asset/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+        name="msapplication-TileImage"
+        content="./asset/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet"
+        />
+    </head>
+    <body">
+        <!-- header -->
+     
+        <header class="header">
+            <div class="container">
+           <div class="header__inner">
+              
+               <div class="header__top">
+                    <div class="logo">
+                    <div class="logo-wrap">
+                        <figure class="logo__union">
+                        <img
+                            src="./asset/img/Union-logo.svg"
+                            alt=""
+                            class="logo__union-img"
+                        />
+                        </figure>
+                        <figure class="logo__primary">
+                        <img
+                            src="./asset/img/primary-logo.svg"
+                            alt=""
+                            class="logo__primary-img"
+                        />
+                        </figure>
+                    </div>
+                    <figure class="logo__sym-wrap">
+                        <img src="./asset/img/logo-sym.svg" alt="" class="logo__sym" />
+                    </figure>
+                    </div>
+                    <nav class="navbar">
+                    <ul class="nav__list">
+                        <li class="nav-item">
+                        <a href="#!" class="nav-item__link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="#!" class="nav-item__link">About</a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="#!" class="nav-item__link">Services & Rates</a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="#!" class="nav-item__link">Review</a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="#!" class="nav-item__link">Contacts us</a>
+                        </li>
+                    </ul>
+                    </nav>
+                    <div class="action">
+                    <button class="action__btn">Sign up</button>
+                    </div>
+                </div>
+                <section class="hero">
+                    <div class="hero__media">
+                 <div class="hero__decord">
+                        <figure class="hero__img-wrap">
+                            <img
+                            src="./asset/img/hero_01.jpg"
+                            alt="cat"
+                            class="hero__img"
+                            />
+                           
+                        </figure>
+                        <figure class="hero__icon">
+                            <img src="./asset/icon/hero-icon.svg" alt="" class="hero__icon-img">
+                        </figure>
+                        <figure class="hero__primary-icon">
+                            <img src="./asset/icon/hero-icon-02.svg" alt="" class="hero__icon-img">
+                        </figure>
+                        <figure class="hero__img-wrap-small">
+                            <img
+                            src="./asset/img/hero-02.jpg"
+                            alt="cat"
+                            class="hero__img--small"
+                            />
+                        </figure>
+
+                        <div class="hero__media-about">
+                            <article class="hero-item">
+                            <figure class="hero-item__img-wrap">
+                                <img
+                                src="./asset/img/hero-avatar_01.jpg"
+                                alt=""
+                                class="hero-item__img"
+                                />
+                            </figure>            
+                            <section class="hero-item__content">
+                            <span class="hero-item__name-pet">Pet Health</span>
+                            <div class="hero-item__quantity"></div>
+                            <div class="hero-item__quantity"></div>
+                        </section>
+                            </article>
+                            <article class="hero-item">
+                            <figure class="hero-item__img-wrap">
+                                <img
+                                src="./asset/img/hero-avatar_02.jpg"
+                                alt=""
+                                class="hero-item__img"
+                                />
+                            </figure>
+                            <section class="hero-item__content">
+                            <span class="hero-item__name-pet">Pet care</span>
+                            <div class="hero-item__quantity"></div>
+                            <div class="hero-item__quantity "></div>
+                            </section>
+                            </article>
+                     
+                
+                    </div> 
+                 </div>
+                    </div>
+                    <section class="hero__content">
+                        <h1 class="hero__content">
+                            <h1 class="hero__heading">Established &
+                                Trusted Pet
+                                Care Service</h1>
+                            <p class="section-desc">Discover a wide variety of Pawsitive services to choose from, including daycare, private walks, office duty and spa.</p>
+                            <div class="hero__cta">
+                                <button class="btn hero__btn"> 
+                                    <a class="hero__btn-link">Book a Meet</a>
+                                    <figure class="hero__btn-chevron">
+                                        <svg
+                                        class="hero__chevron"
+                                        width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.48584 1.5L5.98584 4L3.48584 6.5" stroke="#FD5056" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </figure>
+                                </button>
+                                <a href="#!" class="hero__link">Schedule a Call</a>
+                            </div>
+                        </h1>
+                    </section>
+                </section>
+           </div>
+        </header>
+
+        <main>
+            <!-- ABOUT -->
+            <section class="about">
+                <div class="container">
+                    <div class="about__inner">
+                        <section class="about__content">
+                            <span class="about__pre">//  About  //</span>
+                            <h2 class="section-heading about__heading">Best Agency For
+                                Your Pet.</h2>
+                                    <p class="section-desc about__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <div class="about__list">
+                                        <form class="about-item">
+                                            <input
+                                            type="checkbox"
+                                            id="Certified Groomer"
+                                            class="about-item__input"
+                                            hidden  
+                                            />
+                                            <label class="form-label" for="Certified Groomer">Certified Groomer</label>
+                                        </form>
+                                        <form class="about-item">
+                                            <input
+                                            type="checkbox"
+                                            id="Animal Lover"
+                                            class="about-item__input"
+    
+                                            hidden/>
+                                           
+                                            <label class="form-label" for="Animal Lover">Animal Lover</label>
+                                </form>
+                                <form class="about-item">
+                                    <input
+                                    type="checkbox"
+                                    id="14+ Years Experience"
+                                    class="about-item__input"
+    
+                                    hidden
+                                    />
+    
+                                    <label class="form-label" for="14+ Years Experience">14+ Years Experience</label>
+                                </form>
+                                <form class="about-item">
+                                    <input
+                                    type="checkbox"
+                                    id="Pet Parent Of 3 Dogs"
+                                    class="about-item__input"
+                                    hidden/>
+                                    <label class="form-label" for="Pet Parent Of 3 Dogs">Pet Parent Of 3 Dogs</label>
+                                </form>
+                            </div>
+                        </section>
+                        <div class="about__media">
+                            <figure class="about__pic-wrap">
+                                <img src="./asset/img/about-01.png" alt="" class="about__pic">
+                                
+                            </figure>
+                            <section class="about__feature">
+                                <h3 class="about__age">20+</h3>
+                                <span class="about__exp">Years Experience</span>
+                           
+                            </section>
+                            <figure class="about__feature-icon-wrap">
+                           
+                               <svg width="23" 
+                               class="about__feature-icon"
+                               height="20" viewBox="0 0 23 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5062 17.9395C13.4079 17.9395 13.4079 19.8592 15.334 19.8592C18.2047 19.8592 18.4762 16.1622 16.5771 14.2769C14.6779 12.3917 14.6754 9.87793 11.5062 9.87793C8.33707 9.87793 8.33707 12.3917 6.43544 14.2769C4.53381 16.1622 4.80781 19.9328 7.67848 19.9328C9.60462 19.9328 9.60462 17.9395 11.5062 17.9395Z" fill="currentColor"/>
+                                <path d="M8.20286 7.9642C9.57727 7.76706 10.4717 6.07525 10.2006 4.18545C9.92958 2.29564 8.59566 0.923453 7.22125 1.12059C5.84684 1.31773 4.95241 3.00953 5.22347 4.89934C5.49453 6.78915 6.82845 8.16133 8.20286 7.9642Z" fill="currentColor"/>
+                                <path d="M17.7839 4.88584C18.055 2.99604 17.1605 1.30423 15.7861 1.10709C14.4117 0.909956 13.0778 2.28214 12.8067 4.17195C12.5357 6.06176 13.4301 7.75356 14.8045 7.9507C16.1789 8.14784 17.5128 6.77565 17.7839 4.88584Z" fill="currentColor"/>
+                                <path d="M3.93682 12.2525C4.87392 11.7985 5.1429 10.4176 4.5376 9.16818C3.93231 7.91872 2.68195 7.27385 1.74486 7.72782C0.807762 8.18179 0.538784 9.56269 1.14408 10.8122C1.74937 12.0616 2.99973 12.7065 3.93682 12.2525Z" fill="currentColor"/>
+                                <path d="M21.8611 10.7967C22.4664 9.5472 22.1974 8.1663 21.2603 7.71233C20.3232 7.25836 19.0729 7.90323 18.4676 9.15269C17.8623 10.4022 18.1312 11.7831 19.0683 12.237C20.0054 12.691 21.2558 12.0461 21.8611 10.7967Z" fill="currentColor"/>
+                                </svg>
+                             </figure>
+                        </div>
+                    </div>
+                    <div class="about-pet__inner">
+                        <div class="about-pet__media">
+                            <figure class="about-pet__pic-wrap">
+                                <img src="./asset/img/about-02.png" alt="" class="about-pet__pic">
+                            </figure>
+                            <figure class="about-pet__decord">
+                                <img src="./asset/icon/about-01.svg" alt="" class="about-pet__decord-icon">
+                            </figure>
+                            <figure class="about-pet__decord">
+                                <img src="./asset/icon/about-02.svg" alt="" class="about-pet__decord-icon">
+                            </figure>
+                            <figure class="about-pet__decord">
+                                <img src="./asset/icon/about-03.svg" alt="" class="about-pet__decord-icon">
+                            </figure>
+                            <figure class="about-pet__decord">
+                                <img src="./asset/icon/about-04.svg" alt="" class="about-pet__decord-icon">
+                            </figure>
+                        </div>
+                        <section class="about-pet__content">
+                            <h2 class="section-heading about-pet__heading">Taking A Vacation?
+                                So Is Your Pet.</h2>
+                            <p class="section-desc about-pet__desc">We offer long-term and short-term boarding. Every dog has its own private, spacious room and daily individual time in our large play yard.</p>
+                            <div class="about-pet__list">
+                                <article class="about-pet-item">
+                                    <img src="./asset/icon/about-house.svg" alt="" class="about-pet-item__icon">
+                                    <h3 class="about-pet__name">Pet Boarding</h3>
+                                </article>
+                                <article class="about-pet-item">
+                                    <img src="./asset/icon/about-house-02.svg" alt="" class="about-pet-item__icon">
+                                    <h3 class="about-pet__name">Pet Daycare</h3>
+                                </article>
+                                <article class="about-pet-item">
+                                    <img src="./asset/icon/about-bag.svg" alt="" class="about-pet-item__icon">
+                                    <h3 class="about-pet__name">Pet Transport</h3>
+                                </article>
+                               
+                            </div>
+                            <p class="about-pet__note">While you're on holiday, here's where your furry friends will spend their time.</p>
+                            <a href="#!" class="about-pet__link">View more</a>
+                        </section>
+                    </div>
+                </div>
+            </section>
+            <!-- service -->
+             <section class="service">
+                <div class="container">
+                    <span class="service__pre">What we do for you?</span>
+                    <h2 class="section-heading service__heading">Our Services</h2>
+                    <div class="service__list">
+                       <div class="service__column">
+                        <div class="service-item">
+                            <h3 class="service-title">Puppy Sitting</h3>
+                            <p class="service__desc">Helping your new pup to be a good boy or girl isn’t always easy, but we’re here to help.</p>
+                            <div class="service__cta">
+                                <a href="#!" class="service__link">Read More</a>
+                                <figure class="service__link-icon-wrap">
+                                    <img src="./asset/icon/service-icon.svg" alt="" class="service-link-icon">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="service-item"> 
+                            <h3 class="service-title">Dog Walking</h3>
+                            <p class="service__desc">Choose from a 30, 45, or 60-minute visit to give your pet their daily dose of fun-filled.</p>
+                            <div class="service__cta">
+                                <a href="#!" class="service__link">Read More</a>
+                                <figure class="service__link-icon-wrap">
+                                    <img src="./asset/icon/service-icon.svg" alt="" class="service-link-icon">
+                                </figure>
+                            </div>
+                        </div>
+                      
+                        <div class="service-item"> 
+                            <h3 class="service-title">Pet Sitting</h3>
+                            <p class="service__desc">While you’re away we can make sure your pet has all the food, water, exercise, and, of course.</p>
+                            <div class="service__cta">
+                                <a href="#!" class="service__link">Read More</a>
+                                <figure class="service__link-icon-wrap">
+                                    <img src="./asset/icon/service-icon.svg" alt="" class="service-link-icon">
+                                </figure>
+                            </div>
+                        </div>
+                       </div>
+                      <div class="service__column">
+                                <figure class="service-pic-wrap">
+                                    <img src="./asset/img/service-01.png" alt="" class="service-pic">
+                                </figure>
+                            <button class="section__btn">View All Services</button>
+                           
+                      </div>
+                       <div class="service__column">
+                                <div class="service-item">
+                                    <h3 class="service-title">Pet Taxi</h3>
+                                   <p class="service__desc">Does your pet need a lift to the groomers, vet, or dog park? We’ve got their tail covered.</p>
+                                   <div class="service__cta">
+                                       <a href="#!" class="service__link">Read More</a>
+                                       <figure class="service__link-icon-wrap">
+                                           <img src="./asset/icon/service-icon.svg" alt="" class="service-link-icon">
+                                       </figure>
+                                   </div>
+                                </div>
+    
+                                <div class="service-item"> 
+                                    <h3 class="service-title">Overnight Care</h3>
+                                    <p class="service__desc">If you’re away for the night, we can stay the night or stop by in the evening and morning.</p>
+                                    <div class="service__cta">
+                                        <a href="#!" class="service__link">Read More</a>
+                                        <figure class="service__link-icon-wrap">
+                                            <img src="./asset/icon/service-icon.svg" alt="" class="service-link-icon">
+                                        </figure>
+                                    </div>
+                                </div>
+    
+                            <div class="service-item">
+                                 <h3 class="service-title">Pet Medical Admin</h3>
+                                <p class="service__desc">Our team of experienced professionals can help with everything from pills to injections.</p>
+                                <div class="service__cta">
+                                    <a href="#!" class="service__link">Read More</a>
+                                    <figure class="service__link-icon-wrap">
+                                        <img src="./asset/icon/service-icon.svg" alt="" class="service-link-icon">
+                                    </figure>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+             </section>
+             <!-- team -->
+              <section class="team">
+                <div class="container">
+                    <span class="team__pre">Pet Care Staff</span>
+                    <h2 class="section-heading team__heading">Meet Our Groomers</h2>
+                    <div class="team__list">
+                        <article class="team-item">
+                            <div class="team-wrap">
+                                <figure class="team-item__avatar-wrap">
+                                    <img src="./asset/img/team-01.png" alt="" class="team-item__avatar team__first-avatar">
+                                 
+                                </figure>
+                                <svg
+                                class="team-icon team-icon-01"
+                                width="270" height="113" viewBox="0 0 270 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M268 111C268 65.6359 245.37 25.6369 210.943 2M1.99999 111C1.99999 65.6359 24.6304 25.6369 59.0572 2" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_11_992" x1="135" y1="111" x2="135" y2="2" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="currentColor"/>
+                                    <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
+                                    </linearGradient>
+                                    </defs>
+                                    </svg>
+                            </div>
+                                
+                            <span class="team-item__job">Pet Trainer</span>
+                            <h3 class="team-item__name">Meghan Samit</h3>
+                        </article>
+                        <article class="team-item">
+                            <div class="team-wrap">
+                                <figure class="team-item__avatar-wrap">
+                                    <img src="./asset/img/team-02.png" alt="" class="team-item__avatar team__second-avatar">
+                                 
+                                </figure>
+                                <svg
+                                class="team-icon team-icon-02"
+                                width="270" height="113" viewBox="0 0 270 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M268 111C268 65.6359 245.37 25.6369 210.943 2M1.99999 111C1.99999 65.6359 24.6304 25.6369 59.0572 2" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_11_992" x1="135" y1="111" x2="135" y2="2" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="currentColor"/>
+                                    <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
+                                    </linearGradient>
+                                    </defs>
+                                    </svg>
+                            </div>
+                                
+                            <span class="team-item__job">Veterinarian</span>
+                            <h3 class="team-item__name">Alissa Silva</h3>
+                        </article>
+                        <article class="team-item">
+                            <div class="team-wrap">
+                                <figure class="team-item__avatar-wrap">
+                                    <img src="./asset/img/team-03.png" alt="" class="team-item__avatar">
+                                 
+                                </figure>
+                                <svg
+                                class="team-icon team-icon-03"
+                                width="270" height="113" viewBox="0 0 270 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M268 111C268 65.6359 245.37 25.6369 210.943 2M1.99999 111C1.99999 65.6359 24.6304 25.6369 59.0572 2" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_11_992" x1="135" y1="111" x2="135" y2="2" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="currentColor"/>
+                                    <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
+                                    </linearGradient>
+                                    </defs>
+                                    </svg>
+                            </div>
+                                
+                            <span class="team-item__job">Veterinarian</span>
+                            <h3 class="team-item__name">Cindy Harris</h3>
+                        </article>
+                        <article class="team-item">
+                            <div class="team-wrap">
+                                <figure class="team-item__avatar-wrap">
+                                    <img src="./asset/img/team-04.png" alt="" class="team-item__avatar">
+                                 
+                                </figure>
+                                <svg
+                                class="team-icon team-icon-04"
+                                width="270" height="113" viewBox="0 0 270 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M268 111C268 65.6359 245.37 25.6369 210.943 2M1.99999 111C1.99999 65.6359 24.6304 25.6369 59.0572 2" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_11_992" x1="135" y1="111" x2="135" y2="2" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="currentColor"/>
+                                    <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
+                                    </linearGradient>
+                                    </defs>
+                                    </svg>
+                            </div>
+                                
+                            <span class="team-item__job">Animal Caretaker</span>
+                            <h3 class="team-item__name">Lucas Tony</h3>
+                        </article>
+                    </div>
+                  <div class="team__btn-wrap">  <button class="section__btn team__btn">View All Team</button></div>
+                </div>
+              </section>
+              <!-- purchase  --> 
+               <section class="purchase">
+                <div class="container">
+                    <h2 class="section-heading purchase__heading">The Best Choice</h2>
+                    <p class="section-desc purchase__desc">We offer long-term and short-term boarding. Every dog has its own private, spacious room and daily individual time in our large play yard.</p>
+                    <div class="purchase__choose">
+                        <div class="pricing__switch-inner">
+                            <!-- Switch -->
+                            <div class="pricing__switch">
+                                <input
+                                    type="checkbox"
+                                    name=""
+                                    id="pricing-switch"
+                                    class="pricing__switch-input"
+                                    checked
+                                    hidden
+                           
+                                />
+                                <label
+                                    for="pricing-switch"
+                                    class="pricing__switch-label">
+                                    <span class="pricing__switch-value">
+                                        Monthly
+                                    </span>
+                                    <span class="pricing__switch-value">
+                                        Yearly
+                                    </span>
+                                </label>
+                               
+                            </div>
+                            <figure class="purchase__sale-wrap">
+                                <img src="./asset/icon/purchase-icon-01.svg" alt="" class="purchase__sale">
+                             <div class="purchase__sale-percent-wrap">
+                                <img src="./asset/icon/purchase-icon-02.svg" alt="" class="purchase__sale--circle">
+                                    <span class="purchase__sale-percent">SAVE 15%</span>
+                             </div>
+                            </figure>
+                    </div>
+
+                    
+                    <div class="purchase__list" >
+                        <article class="purchase-item">
+                            <span class="purchase-item__level">Basic</span>
+                            
+                            <span class="purchase-item__number">Day care</span>
+                            <strong class="purchase-item__cost">$150</strong>
+                            <button class="purchase-item__btn section__btn">Purchase Now</button>
+                            <ul class="purchase-item__list-course">
+                                <li class="purchase-item__course-item">Single room</li>
+                                <li class="purchase-item__course-item">Socialist Exercise</li>
+                                <li class="purchase-item__course-item">Custom Meals</li>
+                                <li class="purchase-item__course-item">Spa and Grooming</li>
+                                <li class="purchase-item__course-item purchase-item__course-item--noactive">Excercise 2x</li>
+                                <li class="purchase-item__course-item purchase-item__course-item--noactive">Custom Meals</li>
+                                <li class="purchase-item__course-item purchase-item__course-item--noactive">Grooming 2x</li>
+                            </ul>
+                        </article>
+                        <article class="purchase-item">
+                            <span class="purchase-item__level">Exclusive</span>
+                            <span class="purchase-item__number">2X Care</span>
+                            <strong class="purchase-item__cost">$199</strong>
+                            <button class="purchase-item__btn section__btn">Purchase Now</button>
+                            <ul class="purchase-item__list-course">
+                                <li class="purchase-item__course-item">Single room</li>
+                                <li class="purchase-item__course-item">Socialist Exercise</li>
+                                <li class="purchase-item__course-item">Custom Meals</li>
+                                <li class="purchase-item__course-item">Spa and Grooming</li>
+                                <li class="purchase-item__course-item purchase-item__course-item--noactive">Excercise 2x</li>
+                                <li class="purchase-item__course-item purchase-item__course-item--noactive">Custom Meals</li>
+                                <li class="purchase-item__course-item purchase-item__course-item--noactive">Grooming 2x</li>
+                            </ul>
+                        </article>
+                        <article class="purchase-item">
+                            <span class="purchase-item__level">Platinum</span>
+                            <span class="purchase-item__number">4X Care</span>
+                            <strong class="purchase-item__cost">$299</strong>
+                            <button class="purchase-item__btn section__btn">Purchase Now</button>
+                            <ul class="purchase-item__list-course">
+                                <li class="purchase-item__course-item">Single room</li>
+                                <li class="purchase-item__course-item">Socialist Exercise</li>
+                                <li class="purchase-item__course-item">Custom Meals</li>
+                                <li class="purchase-item__course-item">Spa and Grooming</li>
+                                <li class="purchase-item__course-item">Excercise 2x</li>
+                                <li class="purchase-item__course-item">Custom Meals</li>
+                                <li class="purchase-item__course-item">Grooming 2x</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+               </section>
+               <section class="review">
+                <div class="container">
+                    <div class="review__inner">
+                        <figure class="review__control">
+                            <svg 
+                            class="review__chevron"
+                            width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.875 9.99854H3.125" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.75 4.37354L3.125 9.99854L8.75 15.6235" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </figure>
+                        <figure class="review__thumb-wrap">
+                            <img src="./asset/img/review-01.png" alt="" class="review__thumb">
+                        </figure>
+                        <section class="review__content">
+                            <h2 class="section-heading review__heading">Our Reviews</h2>
+                            <p class="review__desc">“It was very comforting to recieve a text and pics each day about our pets and how they were doing. It was also nice that my pets were in the comfortable environment of their own home and received playfull attention from our pet sitters as well. Thanks so much!”</p>
+                            <span class="review__author">Karla Deras</span>
+                            
+                        </section>
+                        <figure class="review__control">
+                            <svg 
+                            class="review__chevron review__chevron--right"
+                            width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.875 9.99854H3.125" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.75 4.37354L3.125 9.99854L8.75 15.6235" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </figure>
+                        
+                    </div>
+                    <div class="review__control-page-wrap">
+                        <div class="review__control-page review__control--active"></div>
+                        <div class="review__control-page"></div>
+                        <div class="review__control-page"></div>
+                        <div class="review__control-page"></div>
+                    </div>
+                </div>
+               </section>
+               <!-- blog -->
+                <section class="blog">
+                    <div class="container">
+                        <section class="blog__top">
+                            <h2 class="section-heading blog__heading">Our Blog</h2>
+                            <div class="blog__top-content">
+                                <p class="section-desc blog__desc">Stay up to date with the latest tech trands and news in the pets.</p>
+                                <button class="section__btn blog__btn">View All Blog</button>
+                            </div>
+                        </section>
+                        <div class="blog__list">
+                            <article class="blog-item">
+                                <figure class="blog-item__top">
+                                    <time datetime="" class="blog-item__time">21 june 2021</time>
+                           <figure class="blog-item__thumb-wrap">
+                            <img src="./asset/img/blog-01.jpg" alt="" class="blog-item__thumb">
+                        </figure>
+                                </figure>
+                                <h3 class="blog__title">Building Bonds and Trusting Relationships with Your Pets.</h3>
+                                <p class="blog-item__desc">There isn’t a relationship around that can survive without trust. My relationship with my dog Peyton is deep...</p>
+                            </article>
+                            <article class="blog-item">
+                                <figure class="blog-item__top">
+                                    <time datetime="" class="blog-item__time">28 june 2021</time>
+                                    <figure class="blog-item__thumb-wrap">
+                                        <img src="./asset/img/blog-02.jpg" alt="" class="blog-item__thumb">
+                                    </figure>
+                                </figure>
+                                <h3 class="blog__title">Celebrity pet photographer Grace Chon on taking ...</h3>
+                                <p class="blog-item__desc">Doting pet parents have a relentless need to constantly photograph every adorable pet moment...</p>
+                            </article>
+                            <article class="blog-item">
+                                <figure class="blog-item__top">
+                                    <time datetime="" class="blog-item__time">10 july 2021</time>
+                                    <figure class="blog-item__thumb-wrap">
+                                        <img src="./asset/img/blog-03.jpg" alt="" class="blog-item__thumb">
+                                    </figure>
+                                </figure>
+                                <h3 class="blog__title">5 Simple Tricks To Create A More Conscious ...</h3>
+                                <p class="blog-item__desc">It is easy to forget that animals are living creatures with a beating heart.</p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+               <div class="footer__inner">
+                    <div class="footer__media">
+                        <div class="logo">
+                            <div class="logo-wrap">
+                                <figure class="logo__union">
+                                <img
+                                    src="./asset/img/Union-logo.svg"
+                                    alt=""
+                                    class="logo__union-img"
+                                />
+                                </figure>
+                                <figure class="logo__primary">
+                                <img
+                                    src="./asset/img/primary-logo.svg"
+                                    alt=""
+                                    class="logo__primary-img"
+                                />
+                                </figure>
+                            </div>
+                            <figure class="logo__sym-wrap">
+                                <img src="./asset/img/logo-sym.svg" alt="" class="logo__sym" />
+                            </figure>
+                            </div>
+                        <form action="" class="footer__form">
+                            <input type="text" class="footer__input"
+                            placeholder="Enter your email">
+                            <button class="footer__btn">
+                                 <svg 
+                                 class="footer__btn-chevron"
+                                 width="20"
+                                  height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.875 9.99854H3.125" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.75 4.37354L3.125 9.99854L8.75 15.6235" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </button>
+                        </form>
+                        <span class="footer__heading">Follow Us</span>
+                        <div class="footer__list-media">
+                           <article class="footer-item__media">
+                            <img src="./asset/icon/footer-facebook.svg" alt="" class="footer__media-img">
+                           </article>
+                           <article class="footer-item__media">
+                            <img src="./asset/icon/footer-twiter.svg" alt="" class="footer__media-img">
+                           </article>
+                           <article class="footer-item__media">
+                            <img src="./asset/icon/footer-linked.svg" alt="" class="footer__media-img">
+                           </article>
+                           <article class="footer-item__media">
+                            <img src="./asset/icon/footer-instagram.svg" alt="" class="footer__media-img">
+                           </article>
+                        </div>
+                    </div>
+                        <section class="footer__content">
+                            <section class="footer-row">
+                            <section class="footer__column">
+                                <h3 class="footer__heading">Explore</h3>
+                                <ul class="footer-content__list">
+                                        <li>
+                                            <a href="#!" class="footer__link">About Us </a>  
+                                        </li>
+                                       <li>
+                                           <a href="#!" class="footer__link">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="footer__link">Our Team </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="footer__link">Adopt Pet</a>
+                                        </li>
+                                    </ul>
+                            </section>
+                                <section class="footer__column">
+                                    <h3 class="footer__heading">Useful links</h3>
+                                    <ul class="footer-content__list">
+                                            <li>
+                                                <a href="#!" class="footer__link">FAQs
+                                                </a>
+                                            </li>   
+                                            <li>
+                                                <a href="#!" class="footer__link">Shop
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="footer__link">Privacy Policy
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="footer__link">Terms of Use</a>
+                                                
+                                            </li>
+                                            <li>
+                                            <a href="#!" class="footer__link">Site Map</a>
+                                        </li>
+                                  </ul>
+                                </section>
+                                <section class="footer__column">
+                                    <h3 class="footer__heading">Contact Info</h3>
+                                    <ul class="footer-content__list">
+                                            <li>
+                                                <a href="#!" class="footer__link">abc@gmail.com
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#!" class="footer__link">0 (800)-000-00-00</a>
+                                            </li>                                    
+                                            <li>
+                                                <a href="#!" class="footer__link">New York, NY, Rocawy 7</a>
+                                            </li>
+                                </ul>
+                                </section>
+                                <section class="footer__column">
+                                    <h3 class="footer__heading">Opening Time</h3>
+                                    <ul class="footer-content__list">
+                                            <li>
+                                                <a href="#!" class="footer__link">Mon – Fri : 08.00 am – 20.00 pm    </a>
+                                            </li>                                     
+                                            <li>
+                                                <a href="#!" class="footer__link">Saturday : 09.00 am – 20.00 pm</a>
+                                            </li>                         
+                                            <li>
+                                                <a href="#!" class="footer__link">Sunday: We are Closed </a>
+                                            </li>
+                                </ul>
+                                </section>
+                         </section>
+                         <p class="coppyright">Copyright & Design By Uihut</p>
+
+                            </section>
+               </div>
             </div>
-            <nav class="navbar">
-              <ul class="nav__list">
-                <li class="nav-item">
-                  <a href="!#" class="nav-item__link">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="!#" class="nav-item__link">About</a>
-                </li>
-                <li class="nav-item">
-                  <a href="!#" class="nav-item__link">Services & Rates</a>
-                </li>
-                <li class="nav-item">
-                  <a href="!#" class="nav-item__link">Review</a>
-                </li>
-                <li class="nav-item">
-                  <a href="!#" class="nav-item__link">Contacts us</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="action">
-              <button class="action__btn">Sign up</button>
-            </div>
-          </div>
-          <section class="hero">
-            <div class="hero__media">
-              <figure class="hero__img-wrap">
-                <img
-                  src="./asset/img/hero_01.jpg"
-                  alt="cat"
-                  class="hero__img"
-                />
-                <img
-                  src="./asset/img/hero_02.jpg"
-                  alt="cat"
-                  class="hero__img"
-                />
-              </figure>
-              <div class="hero__media-about"></div>
-            </div>
-          </section>
-        </div>
-      </header>
-    </header>
-    <main></main>
-    <footer></footer>
-  </body>
-</html>
+        </footer>
+    </body>
+    </html>
